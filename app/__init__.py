@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # Creating the app configurations
 app.config["SECRET_KEY"] = "fjklajgrighrueia"
-app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://admin:admin123@awseb-e-csmhpynvk6-stack-awsebrdsdatabase-ckwd1kkd9l4i.chhvxuiu6jdh.us-east-1.rds.amazonaws.com/movieapp'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'mysql://admin:adminadmin@mydbapp.chhvxuiu6jdh.us-east-1.rds.amazonaws.com/moviedb'
 
 db = SQLAlchemy(app)
 
