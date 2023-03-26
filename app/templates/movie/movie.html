@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %} Movie Details {% endblock title %} 
+
+{% block content %}
+<form method = "POST"><br>
+    <h3 align="center"><strong>Movie Details</strong></h3>
+
+    <div class="form-group">
+        <label for = "movie_name"><em><strong>Enter movie name</strong></em></label>
+        <input 
+        type = "text"
+        class = "form-control"  
+        id = "movie_name"
+        name = "movie_name"  
+        placeholder = "Enter movie name"
+        />
+    </div>
+
+    <br/>
+    <button type = "submit" class = "btn btn-primary">Submit</button>
+</form>
+<br/>
+<h3>{{ value }}</h3>
+
+
+{% endblock %}

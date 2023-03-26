@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} Modify Rank {% endblock title %} 
+
+{% block content %}
+
+<form method = "POST">
+    <br>
+    <h3 align="center"><strong>Modify Rank</strong></h3>
+
+    <div class="form-group">
+        <input type = "hidden" name = "_method" value = "PUT" />
+        <label for = "rank"><em> Rank from 1-20 </em></label>
+        <input 
+        type = "text"
+        class = "form-control"  
+        id = "rank"
+        name = "rank"  
+        placeholder = "1-20"
+        />
+    </div>
+
+    <br/>
+    <button type = "submit" class = "btn btn-primary">Modify</button>
+</form>
+
+<br/>
+
+{% endblock %}

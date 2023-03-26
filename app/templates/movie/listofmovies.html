@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %} Movie Details {% endblock title %} 
+
+{% block content %}
+<br>
+<h3 align="center"><strong>List of your movies</strong></h3>
+   {% for movie in movies %}    
+   <li class="list-group-item"> {{ movie.movie_name }}
+        <a href = "{{ url_for('mov.rank', id = movie.id) }}" class ="btn btn-outline-danger btn sm"> Rank  </a>      
+        <a href = "{{ url_for('mov.deletemovie', id = movie.id) }}" class ="btn btn-outline-danger btn sm"> Delete  </a>                                 
+   </li>   
+    {% endfor %} 
+
+{% endblock %}
+
